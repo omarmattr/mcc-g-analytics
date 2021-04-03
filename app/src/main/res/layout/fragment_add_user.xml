@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/fragment_horizontal_margin_page"
+            android:layout_marginVertical="@dimen/fragment_vertical_margin_normal"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/card_corner_radius_normal"
+            app:cardElevation="@dimen/card_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25">
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="الاسم"
+                android:backgroundTint="@color/background_item"
+                android:fontFamily="@font/zahra_arabic"
+                android:gravity="top"
+                android:hint="الاسم"
+                android:inputType="text"
+                android:paddingHorizontal="@dimen/fragment_horizontal_padding_normal"
+                android:paddingVertical="@dimen/fragment_vertical_padding_normal"
+                android:textColor="@color/onSecondary"
+                android:textSize="22sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/fragment_horizontal_margin_page"
+            android:layout_marginVertical="@dimen/fragment_vertical_margin_normal"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/card_corner_radius_normal"
+            app:cardElevation="@dimen/card_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView5"
+            app:layout_constraintWidth_percent="0.25">
+
+            <EditText
+                android:id="@+id/txtNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="رقم الهاتف"
+                android:backgroundTint="@color/background_item"
+                android:fontFamily="@font/zahra_arabic"
+                android:gravity="top"
+                android:hint="رقم الهاتف"
+                android:inputType="number"
+                android:paddingHorizontal="@dimen/fragment_horizontal_padding_normal"
+                android:paddingVertical="@dimen/fragment_vertical_padding_normal"
+                android:textColor="@color/onSecondary"
+                android:textSize="22sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/fragment_horizontal_margin_page"
+            android:layout_marginVertical="@dimen/fragment_vertical_margin_normal"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/card_corner_radius_normal"
+            app:cardElevation="@dimen/card_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView7"
+            app:layout_constraintWidth_percent="0.25">
+
+            <EditText
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="مكان السكن"
+                android:backgroundTint="@color/background_item"
+                android:fontFamily="@font/zahra_arabic"
+                android:gravity="top"
+                android:hint="الموقع"
+                android:inputType="text"
+                android:paddingHorizontal="@dimen/fragment_horizontal_padding_normal"
+                android:paddingVertical="@dimen/fragment_vertical_padding_normal"
+                android:textColor="@color/onSecondary"
+                android:textSize="22sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/fragment_horizontal_margin_page"
+            android:layout_marginVertical="@dimen/fragment_vertical_margin_normal"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/card_corner_radius_normal"
+            app:cardElevation="@dimen/card_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView8"
+            app:layout_constraintWidth_percent="0.25">
+
+            <EditText
+                android:id="@+id/txtNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/background_item"
+                android:fontFamily="@font/zahra_arabic"
+                android:gravity="top"
+                android:hint="التفاصيل"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:paddingHorizontal="@dimen/fragment_horizontal_padding_normal"
+                android:paddingVertical="@dimen/fragment_vertical_padding_normal"
+                android:textColor="@color/onSecondary"
+                android:textSize="22sp" />
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/primary"
+            android:layout_marginVertical="@dimen/fragment_vertical_margin_normal"
+            android:text="إضافة"
+            android:textColor="@color/onPrimary"
+            android:textSize="24sp"
+            android:fontFamily="@font/zahra_arabic"
+            app:cornerRadius="@dimen/card_corner_radius_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

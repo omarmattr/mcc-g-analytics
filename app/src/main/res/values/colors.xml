@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background">#EEF4F6</color>
+    <color name="background_item">@color/white</color>
+    <color name="primary">#9CCC65</color>
+    <color name="AcPrimary">#33691E</color>
+    <color name="onPrimary">@color/black</color>
+    <color name="onSecondary">@color/AcPrimary</color>
+    <color name="gray">#787878</color>
 </resources>

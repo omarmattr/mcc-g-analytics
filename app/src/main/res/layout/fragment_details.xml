@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="product"
+            type="com.omarmattr.mcc_g_analytics.model.Product" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".DetailsFragment">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="الصفحة الرئيسية"
+            app:titleTextAppearance="@style/titleText" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="@dimen/fragment_horizontal_margin_normal"
+            app:cardCornerRadius="@dimen/card_corner_radius_normal"
+            app:cardElevation="@dimen/card_elevation"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:layout_editor_absoluteX="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/fragment_horizontal_margin_normal"
+            android:layout_marginVertical="@dimen/fragment_vertical_margin_normal"
+            android:fontFamily="@font/zahra_arabic"
+            android:gravity="center"
+            android:text="@{product.name}"
+            android:textColor="@color/onSecondary"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/fragment_horizontal_margin_normal"
+            android:layout_marginVertical="@dimen/fragment_vertical_margin_normal"
+            android:fontFamily="@font/zahra_arabic"
+            android:gravity="center"
+            android:text="@{product.attr1}"
+            android:textColor="@color/onSecondary"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/fragment_horizontal_margin_normal"
+            android:layout_marginVertical="@dimen/fragment_vertical_margin_normal"
+            android:fontFamily="@font/zahra_arabic"
+            android:gravity="center"
+            android:text="@{product.attr2}"
+            android:textColor="@color/onSecondary"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
